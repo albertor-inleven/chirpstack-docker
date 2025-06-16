@@ -35,7 +35,6 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }}
-          _dockerfilePathKey_: _dockerfilePath_
           registryUrl: loraportalregistry.azurecr.io
           registryUsername: ${{ secrets.CHIRPSTACKPOC_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CHIRPSTACKPOC_REGISTRY_PASSWORD }}
